@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "exam1_backend": {
+      "candid": "src/exam1_backend/exam1_backend.did",
+      "package": "exam1_backend",
+      "type": "rust"
+    },
+    "exam1_frontend": {
+      "dependencies": [
+        "exam1_backend"
+      ],
+      "source": [
+        "src/exam1_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
